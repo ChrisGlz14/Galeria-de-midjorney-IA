@@ -1,0 +1,55 @@
+body {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #000000;
+    text-shadow: 1px 2px 1px #867878;
+  }
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px; 
+  }
+  
+  .galeria img {
+    width: auto;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px #000000;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+
+  .galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px #000000;
+  }
+
+  .overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+  }
+  
+  /* Estilo para la imagen en primer plano */
+  .overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+  }
