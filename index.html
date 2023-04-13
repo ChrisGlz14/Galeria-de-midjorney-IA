@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconos de font Awesome -->
+    <script src="https://kit.fontawesome.com/4db4dddf67.js" crossorigin="anonymous"></script>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +15,7 @@
 </head>
 <body>
     <h1>Galería de fotos de MidJourney de Chris</h1>
-    <div class="galeria">
+    <div id="galeria">
       <img src="img/2.png" alt="Imagen 1">
       <img src="img/10.png" alt="Imagen 2">
       <img src="img/11.png" alt="Imagen 3">
@@ -29,6 +31,15 @@
       <img src="img/18.jpg" alt="Imagen 6">
     </div>
     
+    <div id="overlay">
+      <div id="overlay-img">
+        <img id="img-activa" src="img/2.png" alt="" srcset="">
+          <button id="btn-cierra" type="button"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+          <button id="btn-retrocede" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="btn-adelanta" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>    
+    </div>
+    <div id="irarriba"><a href="#top"><i class="fa-solid fa-arrow-up-square"></i></a></div>
 
     <script src="app.js"></script>
 </body>
