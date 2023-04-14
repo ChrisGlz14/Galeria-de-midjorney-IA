@@ -2,9 +2,14 @@ const btnCierra = document.getElementById('btn-cierra');
 const btnAdelanta = document.getElementById('btn-adelanta');
 const btnRetrocede = document.getElementById('btn-retrocede');
 const imagenes = document.querySelectorAll('#galeria img');
+// const contenedorImagenes = document.querySelector('#galeria')
 const lightbox = document.getElementById('overlay');
 const imagenActiva = document.getElementById('img-activa');
+//indice de imagenes
 let indiceImagen = 0
+//touch para galeria 
+// let startTouchX = 0;
+// let endTouchX = 0;
 
 
 // Abre lightbox
@@ -55,13 +60,27 @@ const retrocedeImagen = () => {
 btnRetrocede.addEventListener('click', retrocedeImagen);
 
 
+//touch 
+
+// imagenes.addEventListener('touchstart', e => {
+//     startTouchX = e.changedTouches[0].screenX;
+//   });
+  
+//   imagenes.addEventListener('touchend', e => {
+//     endTouchX = e.changedTouches[0].screenX;
+//     if (startTouchX > endTouchX) {
+//       adelantaImagen();
+//     } else if (startTouchX < endTouchX) {
+//       retrocedeImagen();
+//     }
+//   });
 
 
 
 
 
+// convert: <a> al inicio de pagina: desaparece cuando el home está en el campo visual
 
-// //contvert: <a> al inicio de pagina: desaparece cuando el home está en el campo visual
 //     var bot = document.getElementById('irarriba');
 //     //var tope = document.getElementById('home');
 //     var tope = document.getElementsByTagName('main')[0];

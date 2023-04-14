@@ -1,5 +1,5 @@
 body {
-    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family:sans-serif;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
@@ -10,8 +10,38 @@ h1 {
     text-align: center;
     margin-top: 50px;
     color: #000000;
-    text-shadow: 1px 2px 1px #867878;
 }
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 
 #galeria {
     display: flex;
@@ -94,9 +124,13 @@ button {
     }
 }
 
-#irarriba {
+/* #irarriba {
   opacity: 1;
+  display: flex;
+  position: absolute;
   visibility: visible; 
-  top: 532px; 
-  left: 522px;
-}
+  top: 700px; 
+  left: 1200px;
+  background-color: rgb(167, 167, 167);
+  font-size: 50px;
+} */
