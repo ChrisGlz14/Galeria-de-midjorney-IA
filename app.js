@@ -7,25 +7,25 @@ const imagenActiva = document.getElementById('img-activa');
 let indiceImagen = 0
 
 
-
+// Abre lightbox
 const abreLightbox = (e) => {
     imagenActiva.src = e.target.src;
     lightbox.style.display = "flex";
 };
 
+
+// recorre imagen 
 imagenes.forEach(imagen => {
 imagen.addEventListener('click', abreLightbox);
 });
-// recorre imagen 
-    Array.from(imagenes).forEach(imagen => {
-    imagen.addEventListener('click', abreLightbox)});
 
-// const imgActiva = document.getElementById('img-activa');
-
-// imgActiva.addEventListener('click', abreLightbox);
+indiceImagen = Array.from(imagenes).indexOf(EventTarget);
 
 
 // cierra lightbox
+    btnCierra.addEventListener('click', ()=>{
+    lightbox.style.display = "none" });
+
 
 // Adelanta la imagen
 

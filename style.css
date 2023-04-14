@@ -88,6 +88,12 @@ button {
     max-height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+    #overlay-img {
+        width: 95%;
+    }
+}
+
 #irarriba {
   opacity: 1;
   visibility: visible; 
