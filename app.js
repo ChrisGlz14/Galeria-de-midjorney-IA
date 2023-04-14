@@ -26,10 +26,33 @@ indiceImagen = Array.from(imagenes).indexOf(EventTarget);
     btnCierra.addEventListener('click', ()=>{
     lightbox.style.display = "none" });
 
+    btnAdelanta.addEventListener('click',()=>{
+        indiceImagen (+i)
+    })
+
 
 // Adelanta la imagen
+const adelantaImagen = ()=> {
+    if (indiceImagen === imagenes.length -1) {
+        indiceImagen = -1
+    }
+    imagenActiva.src = imagenes[indiceImagen + 1].src;
+    indiceImagen++;
+};
+
+btnAdelanta.addEventListener('click', adelantaImagen);
 
 // Retrocede la imagen 
+const retrocedeImagen = () => {
+    if (indiceImagen === 0) {
+        indiceImagen = imagenes.length
+    }
+
+    imagenActiva.src = imagenes[indiceImagen - 1].src;
+    indiceImagen--;
+};
+
+btnRetrocede.addEventListener('click', retrocedeImagen);
 
 
 
