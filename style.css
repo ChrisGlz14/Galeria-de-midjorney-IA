@@ -22,21 +22,13 @@ h1 {
 
 #galeria img {
     width: auto;
-    height: 300px;
+    height: 200px;
     margin: 10px;
     box-shadow: 5px 5px 10px #000000;
     transition: transform 0.2s;
     cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
-    #galeria img{
-        display: grid;
-        grid-template-columns:1;
-        justify-content: center;
-        align-items: center;
-    }
-}
 #galeria img:hover {
     transform: scale(1.1);
     box-shadow: 10px 10px 20px #000000;
